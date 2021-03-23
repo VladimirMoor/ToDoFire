@@ -58,6 +58,7 @@
 		E7E458E82609F10C0040C04C /* ToDoFire */ = {
 			isa = PBXGroup;
 			children = (
+				E7E458F72609F1100040C04C /* Info.plist */,
 				E7E459032609FC3D0040C04C /* Controllers */,
 				E7E459022609FC160040C04C /* Supporting files */,
 			);
@@ -72,7 +73,6 @@
 				E7E458EF2609F10D0040C04C /* Main.storyboard */,
 				E7E458F22609F1100040C04C /* Assets.xcassets */,
 				E7E458F42609F1100040C04C /* LaunchScreen.storyboard */,
-				E7E458F72609F1100040C04C /* Info.plist */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";

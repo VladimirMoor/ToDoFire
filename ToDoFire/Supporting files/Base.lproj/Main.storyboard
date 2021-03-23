@@ -68,6 +68,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSm-mI-ii0"/>
                                                     <segue destination="Iue-Lp-BmF" kind="presentation" identifier="tasksSegue" modalPresentationStyle="fullScreen" id="NRE-RB-vy6"/>
                                                 </connections>
                                             </button>
@@ -77,6 +78,9 @@
                                                 <state key="normal" title="Register">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="registerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DdH-23-ekh"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -104,6 +108,11 @@
                             <constraint firstItem="H7B-xu-WtR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="r6E-a5-4jS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="p0m-2B-6Kj" id="VCC-Ra-qp3"/>
+                        <outlet property="passwordTextField" destination="Htc-pW-8Tl" id="3Un-RI-kgc"/>
+                        <outlet property="warnLabel" destination="iV5-g4-RLd" id="KTd-Sv-MyQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,8 +157,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="roD-gA-rKf">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ro8-3t-ENG"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ro8-3t-ENG">
+                            <connections>
+                                <action selector="addTapped:" destination="wr4-ZJ-tYn" id="wgP-c2-Xc8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="wbd-2g-Rpy" id="uha-gv-3q6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UV7-vr-8S8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
